@@ -26,7 +26,7 @@
       <form action="/short" method="POST" class="card-body d-flex flex-column gap-3">
         <!-- Enter Long URL Input -->
         <div>
-          <input type="text" id="longUrl" name="longUrl" class="form-control p-4" placeholder="Enter Long URL to Get Short Version of URL" />
+          <input required type="text" id="longUrl" name="longUrl" class="form-control p-4" placeholder="Enter Long URL to Get Short Version of URL" />
         </div>
         <!-- Action Buttons -->
         <div class="actionButton">
@@ -37,6 +37,7 @@
           Short URL -
           <a href="<%=shortUrl%>" target="_blank"><%=shortUrl%></a>
         </p>
+        <a href="/" class="btn-grad" style="text-decoration: none;">Clear URL</a>
         <%}%>
         </form>
       </section>

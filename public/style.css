@@ -116,3 +116,12 @@ body {
 .text.url a::after {
   content: " 👈";
 }
+
+@media (max-width: 780px) {
+  .text {
+    font-size: 2rem;
+  }
+  .btn-grad {
+    font-size: 1rem;
+  }
+}
