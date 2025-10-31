@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>URL - Shortener</title>
+  <!-- AOS Animation CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <!-- Bootstrap JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+  <!-- External CSS Link -->
+  <link rel="stylesheet" href="/style.css" />
+  <!-- Custom JavaScript Script -->
+  <script src="/script.js" defer></script>
+</head>
+
+<body>
+  <div class="container" data-aos="fade-up" data-aos-duration="3000">
+    <section class="card">
+      <h1 class="text-center text">URL - Shortener</h1>
+      <form action="/short" method="POST" class="card-body d-flex flex-column gap-3">
+        <!-- Enter Long URL Input -->
+        <div>
+          <input type="text" id="longUrl" name="longUrl" class="form-control p-4" placeholder="Enter Long URL to Get Short Version of URL" />
+        </div>
+        <!-- Action Buttons -->
+        <div class="actionButton">
+          <button type="submit" class="btn-grad">Show Short URL</button>
+        </div>
+        <% if(shortUrl) {%>
+        <p class="text url" style="font-size: 1.1rem">
+          Short URL -
+          <a href="<%=shortUrl%>" target="_blank"><%=shortUrl%></a>
+        </p>
+        <%}%>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
