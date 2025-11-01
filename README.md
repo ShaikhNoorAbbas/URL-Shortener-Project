@@ -1,6 +1,6 @@
 # URL-Shortener-Project
 
-A simple URL shortener web application built using Node.js, Express.js and EJS, with a clean MVC-style structure — created by **Noor (Shaikh Noor Abbas)**.
+A simple URL shortener web application built using Node.js, Express.js and EJS, with a clean MVC-style structure
 
 ---
 
